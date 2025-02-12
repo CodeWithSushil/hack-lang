@@ -1,0 +1,5 @@
+<?hh
+
+echo 'hack lang!';
+
+?>
