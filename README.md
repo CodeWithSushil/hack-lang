@@ -1,5 +1,10 @@
 ## Hack Lang
 - It is a `Hack lang` small mvc framework.
+- command
+```bash
+~/index.sh
+```
+
 
 ```bash
 hhvm -m server -p 8080 -d hhvm.server.type=proxygen
