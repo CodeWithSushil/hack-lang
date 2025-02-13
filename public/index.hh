@@ -1,20 +1,17 @@
 <?hh
 <<__EntryPoint>>
 function main(): void {
-    echo "Hello, Hack!\n";
+    echo "<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Hack + HTML + JS + CSS</title>
+        <link rel='stylesheet' href='style.css'>
+        <script src='script.js'></script>
+    </head>
+    <body>
+        <h1>Hello from Hack!</h1>
+        <p id='message'></p>
+    </body>
+    </html>";
 }
-
-// Non-blocking I/O asych await 
-async function fetchData(): Awaitable<string> {
-    // Simulate API call
-    await SleepWaitHandle::create(2_000_000);
-    return "Data fetched!";
-}
-
-<<__EntryPoint>>
-async function main(): Awaitable<void> {
-    $result = await fetchData();
-    echo $result; // "Data fetched!"
-}
-
-
+?>
