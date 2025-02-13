@@ -1,0 +1,2 @@
+<?hh
+// Auth Service
