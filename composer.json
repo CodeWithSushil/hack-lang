@@ -1,3 +1,18 @@
 {
-  "name": "hack"
+    "name": "codewithsushil/hack-mvc",
+    "description": "Hack lang MVC",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Codewithsushil\\HackMvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sushil Kumar",
+            "email": "sushilkumbhar77@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
 }
