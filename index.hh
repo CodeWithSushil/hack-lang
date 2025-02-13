@@ -1,5 +1,0 @@
-<?hh
-
-echo 'hack lang!';
-
-?>
