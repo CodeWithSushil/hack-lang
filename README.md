@@ -1,7 +1,7 @@
 ## Hack Lang
 
 example of hack lang
-```hh
+```hack
 <?hh
 <<__EntryPoint>>
 function main(): void {
