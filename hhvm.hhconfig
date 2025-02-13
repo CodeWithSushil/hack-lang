@@ -1,0 +1,67 @@
+# Error Reporting Configuration
+# Set the level of error reporting (full, minimal, or none)
+hhvm.server.error_reporter = full    # Full error reporting (recommended for development)
+
+# Memory Limit Configuration
+# Set the maximum memory HHVM can use
+hhvm.memory_limit = 1024M           # Set memory limit to 1GB (increase for larger apps)
+
+# JIT (Just-in-Time) Compilation
+# Enable or disable JIT compilation for performance optimization
+hhvm.jit = true                     # Enable JIT (recommended for performance)
+
+# Server Settings
+# Set the port and document root for HHVM’s built-in server
+hhvm.server.port = 8080             # Set port to 8080 (you can change to any available port)
+hhvm.server.document_root = /var/www/html  # Set document root to your web directory
+
+# Log Settings
+# Configure the verbosity and path of HHVM logs
+hhvm.log.level = Debug              # Enable debug-level logging (use 'Warning' or 'Info' for production)
+hhvm.log.file = /var/log/hhvm.log   # Set the log file path
+
+# Enable PHP7 Compatibility
+# This will enable PHP7 features in HHVM (e.g., PHP7 syntax)
+hhvm.php7.all = true                # Enable PHP7 syntax (recommended if migrating from PHP)
+
+# Opcode Cache Configuration
+# Path for caching opcode and HHVM repo data
+hhvm.repo.central.path = /var/cache/hhvm  # Path where HHVM stores compiled code
+
+# Dynamic Method Calls
+# Allow or disable dynamic method calls (e.g., via __call())
+hhvm.dynamic_call = true             # Allow dynamic method calls (set to false to disable)
+
+# HHVM Language Mode
+# You can run either PHP mode or Hack mode
+hhvm.language = Hack                 # Use Hack language for better performance and type safety
+
+# Performance Enhancements
+# HHVM settings for optimization
+hhvm.server.request_timeout = 30     # Request timeout (in seconds)
+
+# Enable persistent connections to databases or other services
+hhvm.persistent_connections = true   # Enable persistent connections for databases
+
+# Hack Arrays (Enable if you're using Hack arrays, otherwise leave disabled)
+hhvm.hack.arrays = true              # Enable Hack arrays (use if you’re writing in Hack)
+
+# Enable/Disable Strict Mode
+# If you're developing in Hack, you can enable strict mode for additional type checks
+hhvm.strict_types = true             # Enable strict typing for better error prevention
+
+# Disable Dynamic Property Setting in PHP (if not using dynamic properties)
+hhvm.dynamic_properties = false      # Disable dynamic property setting in PHP
+
+# Timezone Settings
+# Set the default timezone (recommended to configure for your server’s region)
+hhvm.date.timezone = "UTC"           # Set timezone to UTC (change to your server's timezone)
+
+# Enable Remote Debugging (for debugging with xdebug or similar tools)
+hhvm.debugger.enable = true          # Enable debugger (useful for remote debugging)
+
+# Additional Settings for Production (optional)
+# For production environments, disable certain features for performance
+hhvm.server.thread_count = 4         # Limit thread count (adjust based on your server's CPU)
+hhvm.repo.authoritative = true       # Make HHVM use authoritative mode for repo (faster in production)
+hhvm.log.performance = /var/log/hhvm-performance.log  # Performance logging for production
